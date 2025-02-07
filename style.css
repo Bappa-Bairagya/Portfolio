@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+.header{
+   
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+    /* background-color: #fff; */
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    width: 100px;
+    
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    background: rgb(237, 59, 24);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/* about */
+.about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 60%;
+}
+.sub{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.tab{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tav-link{
+    margin-right: 50px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.tav-link::after{
+    content: '';
+    background: rgb(237, 59, 24);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tav-link.active::after{
+    width: 50%;
+}
+/* .tav-link:hover::after{
+    width: 100%;
+} */
