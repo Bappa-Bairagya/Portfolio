@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/419cb71caa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -35,19 +36,57 @@
                     <h1 class="sub">About Me</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis placeat excepturi neque, reprehenderit est laudantium minus ad impedit, ratione blanditiis facilis fugit ipsam. Amet tempore perferendis obcaecati nostrum atque!</p>
                     <div class="tab">
-                        <p class="tav-link active">Skills</p>
-                        <p class="tav-link">Experince</p>
-                        <p class="tav-link">Education</p>
+                        <p class="tav-link active" onclick="opentab(skill)">Skills</p>
+                        <p class="tav-link" onclick="opentab(experince)">Experince</p>
+                        <p class="tav-link" onclick="opentab(education)">Education</p>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content active-tab" id="skill">
                         <ul>
                             <li><span>Web Development </span><br>Designing web applications</li>
                             <li><span>App Development </span><br>Designing web applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experince">
+                        <ul>
+                            <li><span>2024</span><br>Designing web applications</li>
+                            <li><span>2024</span><br>Designing web applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>BCA</li>
+                            <li><span>2020-2021 </span><br>Higher Secendary</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="services">
+        <div class="container">
+            <h1 class="sub">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eum dolorum voluptate provident ut beatae optio in est tempora eos error temporibus, perferendis voluptatum dicta, veritatis eveniet vero cum doloribus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eum dolorum voluptate provident ut beatae optio in est tempora eos error temporibus, perferendis voluptatum dicta, veritatis eveniet vero cum doloribus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eum dolorum voluptate provident ut beatae optio in est tempora eos error temporibus, perferendis voluptatum dicta, veritatis eveniet vero cum doloribus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -117,6 +117,55 @@ nav ul li a:hover::after{
 .tav-link.active::after{
     width: 50%;
 }
-/* .tav-link:hover::after{
-    width: 100%;
-} */
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+/* services */
+.services{
+    padding: 30px 0;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div a{
+text-decoration: none;
+color: #fff;
+margin-top: 20px;
+font-size: 12px;
+display: inline-block;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
