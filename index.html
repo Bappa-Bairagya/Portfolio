@@ -8,17 +8,19 @@
     <script src="https://kit.fontawesome.com/419cb71caa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
+    <div id="header">
         <div class="container">
         <nav>
-            <img src="/image/logo.png" alt="" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <img src="/image/logo-b-.png" alt="" class="logo">
+            <ul id="side">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark ico" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars ico" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Web Developer</p>
@@ -26,11 +28,11 @@
         </div>
         </div>
     </div>
-    <div class="about">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="col1">
-                    <img src="/image/user.png" alt="">
+                    <img src="/image/user.jpg" alt="">
                 </div>
                 <div class="col2">
                     <h1 class="sub">About Me</h1>
@@ -62,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div id="services">
         <div class="container">
             <h1 class="sub">My Services</h1>
             <div class="service-list">
@@ -87,7 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div id="portfolio">
         <div class="container">
             <h1 class="sub">My Work</h1>
             <div class="worklist">
@@ -119,13 +121,13 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-    <div class="contact">
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="con-left">
                     <h1 class="sub">Contact Me</h1>
-                    <p>bappa.09092003@gmail.com</p>
-                    <p>9832426760</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>bappa.09092003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9832426760</p>
                     <div class="icons">
                         <a href="https://www.linkedin.com/in/bappa-bairagya-099961271/" target="_main"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Bappa-Bairagya" target="_main"><i class="fa-brands fa-github"></i></a>
@@ -133,16 +135,21 @@
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
+                    <a href="image/bappa-resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="con-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" placeholder="Your Name" name="Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; by Bappa, take &hearts;</p>
         </div>
     </div>
 <script src="script.js"></script>
