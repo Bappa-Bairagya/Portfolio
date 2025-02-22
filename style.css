@@ -63,6 +63,30 @@ nav ul li a:hover::after{
     margin-top: 20%;
     font-size: 30px;
 }
+.header-text p{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: type 2s steps(20) infinite alternate-reverse;
+}
+@keyframes type{
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 100%;
+    }
+}
+.header-text p::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
 .header-text h1{
     margin-top: 20px;
     font-size: 60px;
@@ -319,9 +343,9 @@ nav .ico{
     font-size: 30px;
     display: none;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1200px) {
     #header{
-        background-image: url(image/respon.png);
+        background-image: url(image/air.jpg);
     }
     .header-text{
         margin-top: 100%;
